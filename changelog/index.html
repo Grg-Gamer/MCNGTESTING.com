@@ -709,11 +709,6 @@
       document.getElementById('passwordModal').style.display = "flex"
 
     }
-
-    // SHA-256 hash of the admin password (the real password is never stored
-    // in the source — only this hash is). Note: this only hides the password
-    // from casual viewing of the page source; it is not real security, since
-    // GitHub Pages is fully static and anyone can still inspect the JS.
     const ADMIN_PASSWORD_HASH = "bc4c7b5c0e42e7f2148860f31754ceb03e0aac6ed875975a9b729d9ffe546bff"
 
     async function hashText(text){
